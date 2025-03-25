@@ -1,4 +1,5 @@
 using System;
+using System.Security.Claims;
 using API.DTOs;
 using API.Entities;
 
@@ -16,6 +17,7 @@ public interface IUserRepository
     Task<IEnumerable<MemberDto>> GetMembersAsync();
 
     Task<MemberDto?> GetMembersAsync(string username);
+    Task GetUserByUsernameAsync(Claim username);
 
-
+    
 }
