@@ -29,5 +29,4 @@ public class AppUser
         return DateOfBirth.CalculateAge();
     }
     
-   
 }
